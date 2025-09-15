@@ -218,7 +218,10 @@ export function WalletProvider({ children }: WalletProviderProps) {
         dispatch({ type: 'SET_CHAIN_ID', payload: newChainId });
         
         if (newChainId !== SEPOLIA_CHAIN_ID) {
-          toast.warning('Please switch to Sepolia testnet for full functionality');
+          toast('Please switch to Sepolia testnet for full functionality', {
+            icon: '⚠️',
+            duration: 4000,
+          });
         }
       };
 
