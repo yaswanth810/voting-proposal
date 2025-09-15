@@ -1,0 +1,48 @@
+{
+  "name": "decentralized-voting-system",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost"
+  },
+  "dependencies": {
+    "clsx": "^2.0.0",
+    "date-fns": "^2.30.0",
+    "ethers": "^6.8.1",
+    "framer-motion": "^10.16.5",
+    "lucide-react": "^0.294.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.20.1",
+    "recharts": "^2.8.0",
+    "tailwind-merge": "^2.0.0",
+    "web3": "^4.3.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.1.1",
+    "autoprefixer": "^10.4.16",
+    "dotenv": "^16.6.1",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "hardhat": "^2.26.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  }
+}
